@@ -31,7 +31,7 @@ void FadeFilter::apply(Waveform &waveform) const {
     if (mode_ == Mode::in) {
       samples[index] = static_cast<int16_t>(
           std::round(static_cast<double>(samples[index]) * factor));
-    } else { // fade out
+    } else { 
       std::size_t target_index = samples.size() - fade_samples + index;
       samples[target_index] = static_cast<int16_t>(std::round(
           static_cast<double>(samples[target_index]) * (1.0 - factor)));
