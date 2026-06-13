@@ -1,0 +1,14 @@
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+*.o
+*.obj
+*.exe
+*.out
+*.app
+sound_processor
+sound_processor_tests
+*.exe
